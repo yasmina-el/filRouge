@@ -1,0 +1,300 @@
+@font-face {
+    font-family: Siracha;
+    src: url(../fonts/Sriracha/Sriracha-Regular.ttf);
+    
+}
+
+@font-face{
+    font-family: WC-Mano-Negra-Bta;
+    src: url(../fonts/WC-Mano-Negra-Bta/WCManoNegraBoldBta.otf);
+}
+
+body{
+    font-family: Siracha;    
+}
+/* En tête */
+header{
+    font-family: WC-Mano-Negra-Bta;
+    font-size: larger;
+    background-color: black;
+    height:700px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    
+
+}
+header img{
+    width: auto;
+    height: 400px;
+}
+nav ul {
+    width: 750px;
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;    
+}
+
+
+
+a{
+    text-decoration: none;
+    color:black;
+    border: 3px outset red;
+    border-radius: 10px;
+    background-color: white;
+    padding: 5px 10px 5px 10px;
+    
+    
+}
+a:hover{
+    background-color: rgba(255, 255, 255, 0.658);
+    
+}
+
+/* Coeur de la page */
+
+h3{
+    
+    border-top: 2px dotted red;
+    border-bottom: 2px dotted red;
+    text-align: center;
+    font-size: x-large;
+}
+#presentation{
+    border-bottom: 20px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#affiche{
+    border: 1px solid black;
+    background-image: url(../images/deco/affiche.png);
+    background-size: cover;
+    width: 2500px;
+    height: auto;
+}
+#article{
+    
+    display: flex;
+    padding-left: 15px;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+    
+}
+
+#protagonistes h2{
+    font-family: WC-Mano-Negra-Bta;
+    text-align: center;
+    font-size: 80px;
+}
+
+#protagonistes{
+    
+    margin: 80px 0px 80px 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-between;
+}
+
+figcaption{
+    font-weight: bold;
+}
+
+figure img{
+    
+    width: auto;
+    height: 300px;
+    padding-left: 28.5px;
+}
+
+.personnages{
+    display: flex;
+    list-style-type: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+.personnages li img:hover{
+    transform: scale(1.5,1.5) 
+    
+}
+
+/* Quizz */
+
+.lancementQuizz,.questionQuizz, #finQuizz{
+    display: flex;
+}
+
+.lancementQuizz{
+    width: 100%;
+    height: 800px;
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+    
+   
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; 
+    
+    
+    background-image: url(../images/quizz/demon-slayer-all-hashira-members.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top: 5px solid black;
+    
+    
+}
+
+.lancementQuizz h2{
+    font-family: WC-Mano-Negra-Bta;
+    font-size: 60px;
+    text-shadow: 6px 4px 4px black;
+}
+
+#buttonDemarer{
+    width: auto;
+    height: 80px;
+    
+    background-image: radial-gradient(circle at 50% 50%, #eaeae4 0, #ccccd0 50%, #afafbd 100%);
+    
+    font-family: WC-Mano-Negra-Bta;
+    font-size: 40px;
+    padding: 10px 10px 10px 10px;
+    border: 3px outset rgb(5, 0, 31);
+    border-radius: 10px;
+    box-shadow: inset 5px 5px 6px rgba(255, 255, 255, .6),
+                inset -5px -5px 6px rgba(0, 0, 0, .6);
+
+}
+
+#Quizz button:active {
+    box-shadow: inset -5px -5px 6px rgba(255, 255, 255, .6),
+                inset 5px 5px 6px rgba(0, 0, 0, .6);
+}
+
+.questionQuizz{
+   
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    color:white;
+    font-size: 35px;
+   
+    background-image: url(../images/quizz/gamingcoffee.jpg);
+    background-size: cover;
+    height: 800px;
+    
+}
+.questionQuizz h3{
+    font-size: 40px;
+    
+}
+
+.questionQuizz ul {
+    list-style-type: none;
+}
+
+#proposition{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+button{
+    font-family: Siracha;
+    font-size: x-large;
+
+    font-weight: bold;
+    border: 3px solid rgb(107, 106, 112);
+    border-radius: 5px;
+    margin-top: 10px;
+    background-image: radial-gradient(circle at 50% 50%, #eaeae4 0, #ccccd0 50%, #afafbd 100%);
+}
+
+#finQuizz{
+    
+    background-image: url(../images/quizz/pinterest.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.bilanQuizz{
+    background-color: rgba(0, 0, 0, 0.692);
+    width: 100%;
+    height: 600px;
+    color: white;
+    
+    
+    font-size: 40px;
+    font-weight: bolder;
+    text-align: center;
+    
+    
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+#buttonRejouer{
+    width: auto;
+    height: 80px;
+    
+    background-image: radial-gradient(circle at 50% 50%, #eaeae4 0, #ccccd0 50%, #afafbd 100%);
+
+    font-family: WC-Mano-Negra-Bta;
+    font-size: x-large;
+    padding: 10px 10px 10px 10px;
+    border: 3px outset rgb(5, 0, 31);
+    border-radius: 10px;
+}
+
+.bilanQuizz #résultat {
+    width: fit-content;
+    height: fit-content;
+}
+
+.questionQuizz,#finQuizz{
+    display: none;
+}
+
+/* Pied de page */
+footer{
+    display: flex;
+    background-color: black;
+    
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+    
+}
+
+#source{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+a img{
+    width: auto;
+    height: 220px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
